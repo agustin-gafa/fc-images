@@ -112,7 +112,7 @@ for product in products:
     saved_files = []
 
     for i, url in enumerate(product["urls"], start=1):
-        filename = f"{base_name} - 0{i}.jpg"
+        filename = f"{base_name}-0{i}.jpg"
         filepath = os.path.join(OUTPUT_DIR, filename)
         try:
             response = requests.get(url, timeout=15)
